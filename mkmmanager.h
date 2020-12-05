@@ -8,6 +8,7 @@ class MKMManager : public QObject
     Q_OBJECT
 public:
     MKMManager(const QString &appToken, const QString &appSecret, const QString &accessToken, const QString &accessTokenSecret, QObject *parent = nullptr);
+    void request(const QString &url);
 
 private:
     QString mAppToken;
